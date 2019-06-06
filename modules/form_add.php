@@ -34,7 +34,7 @@
     <input type="hidden" name="time" value="<?php echo date('H:i:s'); ?>"/>
     <br>
 
-    <button type="submit" name="save" class="btn btn-primary">Добавим</button>
+    <button type="submit" name="add" class="btn btn-primary">Добавим</button>
     <br>
     <br>
     </form>

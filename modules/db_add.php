@@ -19,6 +19,10 @@ if (isset($_POST['add'])) {
         echo 'Сообщение добавлено';
     }
 
+    if ($result !== true) {
+        echo 'error';
+    }
+
     mysqli_close($link);
 
 }

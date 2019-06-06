@@ -26,6 +26,7 @@ require_once'modules/db_show.php';
 
 ?>
 <div class="col-lg-4">
+<img src="http://upload.wikimedia.org/wikipedia/commons/f/f0/Animated-Flag-Russia_2.gif">
 <img src="https://vgif.ru/gifs/140/vgif-ru-16812.gif">
 </div>
 </div>

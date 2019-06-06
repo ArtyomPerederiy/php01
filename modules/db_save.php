@@ -13,11 +13,15 @@ if (isset($_POST['save'])) {
     $time = $_POST['time'];
 
 
-    $request = "UPDATE story SET topic='$topic', content='$content', author='$author'" . "topicDate = '$date', topiTime ='$time' WHERE id = '$id'";
+    $request = "UPDATE story SET topic='$topic', content='$content', author='$author'" . "topicDate = '$date', topiTime ='$time' WHERE id = '$id' ";
     $result = mysqli_qury($link, $request);
 
     if ($result === true) {
         echo 'Сообщение обновлено';
+    }
+
+    if ($result !== true) {
+        echo 'Ошибка';
     }
 
     mysqli_close($link);

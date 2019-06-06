@@ -12,6 +12,7 @@ mysqli_close($link);
 while ($news = mysqli_fetch_array($result)) {
 
     ?>
+    <div class="col-lg-8">
     <div class="card-body d-flex flex-column align-items-start">
     <h3 class="mb-0"><p class='dark'><?php echo $news['topic'] . '<br>'; ?> </p></h3>
     <p><?php echo $news['content'] . '<br>'; ?></p>
@@ -23,6 +24,7 @@ while ($news = mysqli_fetch_array($result)) {
     
     <br>
     <br>
+    </div>
     </div>
     <?php
 

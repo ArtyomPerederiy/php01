@@ -12,6 +12,7 @@
 <h1> БЛОГ - ВЛАДИМИРА ВЛАДИМИРОВИЧА ПУТИНА </h1>
 <br><br>
 <a href="modules/form_add.php"><button type="button" class="btn btn-primary">Добавить новость</button></a>
+<div class="row">
 
 <?php
 
@@ -24,5 +25,8 @@ require_once'modules/db_show.php';
 
 
 ?>
+<div class="col-lg-4">
 <img src="https://vgif.ru/gifs/140/vgif-ru-16812.gif">
+</div>
+</div>
 </div>

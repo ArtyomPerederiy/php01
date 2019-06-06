@@ -23,7 +23,7 @@
 
     <input type="hidden" name="date" value="<?php echo date('Y-m-d');?>"/>
     <input type="hidden" name="time" value="<?php echo date('H:i:s');?>"/>
-    <input type="hidden" name="id" value="<?php echo date('id');?>"/>
+    <input type="hidden" name="id" value="<?php echo $news['id'];?>"/>
 
     <br>
 

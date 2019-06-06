@@ -7,6 +7,7 @@
     <title>Новая запись</title>
 </head>
 <body>
+<div class='row'>
     <form method="post" action="db_add.php">
     О чем речь <br>
     <input type="text" name="topic" /><br>
@@ -28,6 +29,6 @@
     <br>
     <br>
     </form>
-
+</div>
 </body>
 </html>

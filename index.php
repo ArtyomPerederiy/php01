@@ -24,4 +24,5 @@ require_once'modules/db_show.php';
 
 
 ?>
+<img src="https://vgif.ru/gifs/140/vgif-ru-16812.gif">
 </div>

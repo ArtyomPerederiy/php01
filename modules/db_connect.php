@@ -1,6 +1,6 @@
 <?php
 
-$link = mysqli_connect('remotemysql.com', 'Oz0ycTyNPX', 'Spr6dixj4t', 'notes');
+$link = mysqli_connect('remotemysql.com', 'Oz0ycTyNPX', 'Spr6dixj4t', 'Oz0ycTyNPX');
 
 // catch db errors
 

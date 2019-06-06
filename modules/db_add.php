@@ -7,6 +7,7 @@ if (isset($_POST['add'])) {
 
     $topic = strip_tags(trim($_POST['topic']));
     $content = strip_tags(trim($_POST['content']));
+    $author = strip_tags(trim($_POST['author']));
     $date = $_POST['date'];
     $time = $_POST['time'];
 

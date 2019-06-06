@@ -6,7 +6,7 @@ $id = $_GET['id'];
 
 $request = "SELECT * FROM story WHERE id = '$id'";
 $result = mysqli_query($link, $request);
-
+echo $request;
 mysqli_close($link);
 
 $news = mysqli_fetch_assoc($result);

@@ -12,11 +12,10 @@ if (isset($_POST['save'])) {
     $author = strip_tags(trim($_POST['author']));
     $date = $_POST['date'];
     $time = $_POST['time'];
-    echo $request;
 
     $request = "UPDATE story SET topic='$topic', content='$content', author='$author'" . "topicDate = '$date', topicTime ='$time' WHERE id = '$id' ";
     $result = mysqli_query($link, $request);
-
+    echo $request;
     if ($result === true) {
         echo 'Сообщение обновлено';
     }

@@ -1,7 +1,7 @@
 <?php
 
 
-$request = 'SELECT * FROM story';
+$request = 'SELECT * FROM story ORDER BY DESC';
 
 $result = mysqli_query($link, $request);
 

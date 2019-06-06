@@ -12,7 +12,7 @@ if (isset($_POST['add'])) {
 
     $request = "INSERT INTO story (topic, content, author, topicDate, topicTime)" . "VALUES ('$topic', '$content', '$author', '$topicDate', '$topicTime')";
     $result = mysqli_query($link, $request);
-    
+    echo $request;
     if ($result === true) {
         echo 'Сообщение добавлено';
     }

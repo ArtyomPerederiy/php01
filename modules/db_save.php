@@ -5,8 +5,7 @@
 if (isset($_POST['save'])) {
     require_once'db_connect.php';
     
-    $id = $_GET['id'];
-    echo $id;
+    $id = $_POST['id'];
     $topic = strip_tags(trim($_POST['topic']));
     $content = strip_tags(trim($_POST['content']));
     $author = strip_tags(trim($_POST['author']));

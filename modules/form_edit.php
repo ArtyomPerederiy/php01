@@ -16,18 +16,18 @@
 
 </head>
 <body>
-
+    <div class='container'>
     <form method="post" action="db_save.php">
     О чем речь <br>
-    <input type="text" name="topic" value="<?php echo $news['topic']?>"/><br>
+    <input type="text" name="topic" class="form-control" value="<?php echo $news['topic']?>"/><br>
     <br>
     
     Подробности <br>
-    <textarea color="60" rows="10" name="content"><?php echo $news['content']?></textarea><br>
+    <textarea color="60" rows="10" class="form-control" name="content"><?php echo $news['content']?></textarea><br>
     <br>
 
     Кто разузнал <br>
-    <input type="text" name="author" value="<?php echo $news['author']?>"/><br>
+    <input type="text" name="author" class="form-control" value="<?php echo $news['author']?>"/><br>
     <br>
 
     <input type="hidden" name="date" value="<?php echo date('Y-m-d');?>"/>
@@ -35,11 +35,10 @@
     <input type="hidden" name="id" value="<?php echo $news['id'];?>"/>
 
     <br>
-
-    <input type="submit" name="save" value="Сохраним" />
+    <button type="submit" name="save" class="btn btn-primary">Сохраним</button>
     <br>
     <br>
     </form>
-    
+    </div>
 </body>
 </html>

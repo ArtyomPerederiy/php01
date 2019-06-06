@@ -18,11 +18,11 @@
     <br>
 
     Кто разузнал <br>
-    <input type="text" name="author" /><br>
+    <input type="text" name="author" value='kek' /><br>
     <br>
 
-    <input type="hidden" name="date" value="<?php echo date('Y-m-d');?>"/>
-    <input type="hidden" name="time" value="<?php echo date('H:i:s');?>"/>
+    <input type="hidden" name="date" value="<?php echo date('Y-m-d'); ?>"/>
+    <input type="hidden" name="time" value="<?php echo date('H:i:s'); ?>"/>
     <br>
 
     <input type="submit" name="add" value="Добавим" />

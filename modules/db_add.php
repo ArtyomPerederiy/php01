@@ -10,8 +10,7 @@ if (isset($_POST['add'])) {
     $date = $_POST['date'];
     $time = $_POST['time'];
 
-    $request = "INSERT INTO story (topic, content, author, topicDate, topicTime)" 
-                                    . "VALUES ('$topic', '$content', '$author', '$topicDate', '$topicTime')";
+    $request = "INSERT INTO story (topic, content, author, topicDate, topicTime)" . "VALUES ('$topic', '$content', '$author', '$topicDate', '$topicTime')";
 
     $result = mysqli_query($link, $request);
     

@@ -11,7 +11,6 @@ if (isset($_POST['add'])) {
     $time = $_POST['time'];
 
     $request = "INSERT INTO story (topic, content, author, topicDate, topicTime)" . "VALUES ('$topic', '$content', '$author', '$topicDate', '$topicTime')";
-
     $result = mysqli_query($link, $request);
     
     if ($result === true) {

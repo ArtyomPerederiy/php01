@@ -4,8 +4,9 @@
 
 if (isset($_POST['save'])) {
     require_once'db_connect.php';
-
-    $id = $_POST['id'];
+    
+    $id = $_GET['id'];
+    
     $topic = strip_tags(trim($_POST['topic']));
     $content = strip_tags(trim($_POST['content']));
     $author = strip_tags(trim($_POST['author']));
@@ -13,7 +14,7 @@ if (isset($_POST['save'])) {
     $time = $_POST['time'];
 
 
-    $request = "UPDATE story SET topic='$topic', content='$content', author='$author'" . "topicDate = '$date', topiTime ='$time' WHERE id = '$id' ";
+    $request = "UPDATE story SET topic='$topic', content='$content', author='$author'" . "topicDate = '$date', topicTime ='$time' WHERE id = '$id' ";
     $result = mysqli_query($link, $request);
 
     if ($result === true) {

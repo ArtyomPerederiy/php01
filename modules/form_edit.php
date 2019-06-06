@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <form method="post" action="db_edit.php">
+    <form method="post" action="db_save.php">
     О чем речь <br>
     <input type="text" name="topic" value="<?php echo $news['topic']?>"/><br>
     <br>

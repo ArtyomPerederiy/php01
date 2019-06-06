@@ -14,7 +14,7 @@ if (isset($_POST['save'])) {
 
 
     $request = "UPDATE story SET topic='$topic', content='$content', author='$author'" . "topicDate = '$date', topiTime ='$time' WHERE id = '$id' ";
-    $result = mysqli_qury($link, $request);
+    $result = mysqli_query($link, $request);
 
     if ($result === true) {
         echo 'Сообщение обновлено';

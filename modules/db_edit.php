@@ -5,7 +5,7 @@ require_once'db_connect.php';
 $id = $_GET['id'];
 
 $request = "SELECT * FROM story WHERE id = '$id'";
-$result = mysqli_query($limk, $request);
+$result = mysqli_query($link, $request);
 
 mysqli_close($link);
 

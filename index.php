@@ -8,11 +8,11 @@
 <!-- Последняя компиляция и сжатый JavaScript -->  
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <div class="container">
+<br>
+<h1> БЛОГ - ВЛАДИМИРА ВЛАДИМИРОВИЧА ПУТИНА </h1>
+<br><br>
 <a href="modules/form_add.php"><button type="button" class="btn btn-primary">Добавить новость</button></a>
-<br>
-<br>
-<br>
-  
+
 <?php
 
 // catch error

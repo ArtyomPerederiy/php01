@@ -19,22 +19,22 @@
 <div class='container'>
     <form method="post" action="db_add.php">
     О чем речь <br>
-    <input type="text" name="topic" /><br>
+    <input type="text" name="topic"class="form-control"  /><br>
     <br>
 
     Подробности <br>
-    <textarea color="60" row="10" name="content"></textarea><br>
+    <textarea color="60" row="10" class="form-control" name="content"></textarea><br>
     <br>
 
     Кто разузнал <br>
-    <input type="text" name="author" value='kek' /><br>
+    <input type="text" name="author" class="form-control" /><br>
     <br>
 
     <input type="hidden" name="date" value="<?php echo date('Y-m-d'); ?>"/>
     <input type="hidden" name="time" value="<?php echo date('H:i:s'); ?>"/>
     <br>
 
-    <input type="submit" name="add" value="Добавим" />
+    <button type="submit" name="save" class="btn btn-primary">Добавим</button>
     <br>
     <br>
     </form>
